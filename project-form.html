@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Project</title>
+</head>
+<body bgcolor="#151617" style="color: white">
+    <h1>Pendaftaran Murid Kursus Baru</h1>
+    <form action="">
+        <label for="fullname">Fullname</label> <br>
+        <input type="text" name="fullname" id="fullname" placeholder="Enter your fullname" required max="30"> <br>
+        
+        <label for="Email">Email</label> <br>
+        <input type="email" name="Email" id="Email" placeholder="Enter your email" required> <br>
+
+        <label for="phone">Phone Number</label> <br>
+        <input type="number" name="phone" id="phone" placeholder="Enter phone number" required> <br>
+
+        <label for="tanggal_lahir">Tanggal Lahir</label> <br>
+        <input type="date" name="tanggal_lahir" id="tanggal_lahir" required> <br>
+        <h3>Jenis Kelamin</h3>
+        <input type="radio" name="jenisKelamin" id="Laki-laki" value="laki-laki">
+        <label for="laki-laki">Laki-laki</label>
+        <br>
+        <input type="radio" name="jenisKelamin" id="perempuan" value="perempuan">
+        <label for="perempuan">Perempuan</label>
+
+        <h3>Kelas :</h3>
+        <input type="checkbox" name="SMP1" id="SMP1" value="7">
+        <label for="SMP1">7</label>
+
+        <input type="checkbox" name="SMP2" id="SMP2" value="8">
+        <label for="SMP2">8</label>
+        
+        <input type="checkbox" name="SMP3" id="SMP3" value="9">
+        <label for="SMP3">9</label>
+        <br>
+        <input type="checkbox" name="SMA1" id="SMA1" value="10">
+        <label for="SMA1">10</label>
+        
+        <input type="checkbox" name="SMA2" id="SMA2" value="11">
+        <label for="SMA2">11</label>
+        
+        <input type="checkbox" name="SMA3" id="SMA3" value="12">
+        <label for="SMA3">12</label>
+
+        <h3>Pilihan Ekskul</h3>
+        <select name="pilihanekskul">
+                <option value="volly">Volly</option>
+                <option value="batminton">Batminton</option>
+                <option value="paskibra">Paskibra</option>
+                <option value="socker">Socker</option>
+                <option value="basket">Basket</option>
+                <option value="pramuka">Pramuka</option>
+        </select>
+        <br> <br>
+        <input type="reset" value="Reset" name="reset" id="reset">
+        <input type="submit" value="Send" name="send" id="send">
+    </form>
+</body>
+</html>
