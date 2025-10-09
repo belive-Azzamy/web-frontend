@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir</title>
+</head> 
+<body bgcolor="#151617" style="color: white">
+    <h1>Pendaftaran Siswa</h1>
+    <form action="">
+        <label for="fullname">Fullname</label> <br>
+        <input type="text" name="fullname" id="fullname" placeholder="Enter your name" required maxlength="20"> <br>
+
+        <label for="Email">Email</label> <br>
+        <input type="email" name="Email" id="Email" placeholder="Enter your email" required disabled> <br>
+
+        <label for="phone">Phone Number</label> <br>
+        <input type="number" name="phone" id="phone" placeholder="Enter phone number" required> <br>
+
+        <label for="pw">password</label> <br>
+        <input type="password" name="pw" id="pw" placeholder="Enter your password" required> <br>
+
+        <label for="tanggal_lahir">Tanggal Lahir</label> <br>
+        <input type="date" name="tanggal_lahir" id="tanggal_lahir" required> <br>
+        <h3>Hobi</h3>
+ 
+        <input type="checkbox" id="hobi1" name="hobi1" value="berenang" checked>
+        <label for="hobi1">Berenang</label>
+        <br>
+        <input type="checkbox" id="hobi2" name="hobi2" value="sepakbola">
+        <label for="hobi2">Sepak Bola</label>
+        <br>
+        <input type="checkbox" id="hobi3" name="hobi3" value="berkuda">
+        <label for="hobi3">Berkuda</label>
+        
+        <h4>Jenis Kelamin</h4>
+        <input type="radio" id="perempuan" name="jenisKelamin" value="Perempuan">
+        <label for="perempuan">Perempuan</label>
+        <br>
+        <input type="radio" id="laki-laki" name="jenisKelamin" value="Laku-laki" checked>
+        <label for="laki-laki">Laki-laki</label>
+
+        <h3>Pilihan Kelas</h3>
+        <select name="pilihanKelas">
+            <option value="phpweb">PHP Web Development</option>
+            <option value="pythonweb" selected>Python Web Development</option>
+            <option value="scratch">Scratch Programming</option>
+            <option value="thunkable">Thunkable Mobile App</option>
+            <option value="Android">Android Settings Program</option>
+            <option value="Design">Design Web Development   </option>
+        </select>
+        <br> <br>
+        <input type="reset" value="Reset" name="reset" id="reset">
+        <input type="submit" value="Send" name="send" id="send">
+
+    </form>
+</body>
+</html>
