@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="#151617" style="color: white">
+    <label for="weight">Height Number (cm)</label> <br>
+        <input type="number" name="height" class="input-header" id="height" placeholder="Enter height body" required> <br>
+
+        <label for="phone">Weight Number (kg)</label> <br>
+    <input type="number" name="weight" class="input-header" id="weight" placeholder="Enter weight body" required> <br>
+    <br>
+    <button class="button enter" onclick= "hitungbmi ()">Enter</button>
+    <br>
+    <h1 id="result"></h1>
+
+    <script>
+        function hitungbmi() {
+            let weight = document.getElementById("weight").value;
+            let height = document.getElementById("height").value;
+
+            let height_meter = height / 100;
+            let bmi = weight / (height_meter * height_meter)
+
+            let result = "Youre BMI is " + bmi.toFixed(2)
+
+            if (bmi <  18.5) {
+                result += "\n You are underweight.";
+            } else if (bmi >= 18.5 && bmi <= 24.9) {
+                result += "<br> You are normal weight";
+            } else if (bmi >= 25 && bmi <= 29.9) {
+                result += "<br> You are overweight";
+            } else {
+                result += "<br> You are obesity";
+            }
+            
+            document.getElementById("result").innerHTML = result
+        }
+    </script>
+</body>
+</html>
