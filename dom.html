@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body>
+    <h1>ini judul</h1>
+    <a href="">ini atribute</a>
+
+    <form action="" onsubmit="return validasi()">
+        <label for="nama">Nama:</label>
+        <input type="text" id="name" name="nama"><br><br>
+        <input type="submit" value="submit">
+    </form>
+    <p name="pengganti"> ini nama</p>
+    <script>
+        function validasi() {
+            let nama = document.getElementById("nama")[0].value;
+
+            if(nama =="") {
+                alert("Nama harus diisi")
+                return false;
+            }
+            else{
+                let pengganti = document.getElementsByName("pengganti")[0].innerHTML = "Nama anda adalah " + nama;
+                pengganti.style.color = "blue";
+                pengganti.style.fontSize = 30 + "px";
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>
